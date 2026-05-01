@@ -20,7 +20,8 @@ export default async function handler(req, res) {
     return res.status(200).send(`
       <div style="font-family: sans-serif; text-align: center; padding: 50px;">
         <h1>Ďakujem za tvoju úprimnosť 🤍</h1>
-        <p>Tvoje odpovede boli bezpečne uložené.</p>
+        <p>Ja neplánujem odchádzať nikde, ale budem rešpektovať tvoje odpovede.</p>
+        <p>Keby si mala niečo viac na srdci stačí mi napísať / zavolať.</p>
       </div>
     `);
   } catch (error) {
