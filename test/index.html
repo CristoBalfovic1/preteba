@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre teba 🤍</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-pink-50 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white rounded-3xl shadow-lg max-w-lg w-full p-8 sm:p-10">
+        
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-semibold text-gray-800 mb-3">Ahoj 🌸</h1>
+            <p class="text-gray-600 text-sm leading-relaxed">
+                Trochu sa vo mne ozýva neistota. 
+                Záleží mi na nás a chcem vedieť, ako sa cítiš. Bol by som rád, keby si mi na toto úprimne odpovedala.
+            </p>
+        </div>
+
+        <form action="/api/submit" method="POST" class="space-y-6">
+            
+            <div>
+                <label class="block text-gray-700 font-medium mb-2">Si so mnou momentálne šťastná?</label>
+                <select name="Stastie" required class="w-full bg-pink-50/50 border border-pink-200 text-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-300">
+                    <option value="" disabled selected>Vyber odpoveď...</option>
+                    <option value="Áno, som">Áno, som 🤍</option>
+                    <option value="Je to teraz ťažšie, ale chcem byť">Je to teraz ťažšie, ale chcem byť</option>
+                    <option value="Nie som si istá">Zatiaľ nie som si celkom istá</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-gray-700 font-medium mb-2">Je medzi nami všetko v poriadku, alebo ťa niečo trápi?</label>
+                <textarea name="Trapi_ta_nieco" rows="3" required placeholder="Pokojne sa rozpíš..." class="w-full bg-pink-50/50 border border-pink-200 text-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+            </div>
+
+            <div>
+                <label class="block text-gray-700 font-medium mb-2">Cítim, ako by sme sa trochu vzdialili. Vnímaš to rovnako?</label>
+                <textarea name="Vzdialenie" rows="3" required placeholder="Tvoj pohľad na vec..." class="w-full bg-pink-50/50 border border-pink-200 text-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+            </div>
+
+            <div>
+                <label class="block text-gray-700 font-medium mb-2">Čo by si chcela, aby sme teraz spravili alebo zmenili?</label>
+                <textarea name="Riesenie" rows="3" placeholder="Napr. viac si volať, stretnúť sa..." class="w-full bg-pink-50/50 border border-pink-200 text-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-pink-400 hover:bg-pink-500 text-white font-medium text-lg py-4 rounded-xl transition duration-300 shadow-md hover:shadow-lg">
+                Odoslať odpovede 💌
+            </button>
+        </form>
+
+    </div>
+
+</body>
+</html>
